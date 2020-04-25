@@ -20,9 +20,7 @@ int Renderer::init() {
     return 0;
 }
 
-
-
-int Renderer::render() {
+int Renderer::update() {
     glUseProgram(shaderProgram);
     glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);

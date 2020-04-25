@@ -2,8 +2,8 @@
 // Created by Martin Cristobal on 25/04/2020.
 //
 
-#include "DefaultBehaviour.h"
+#include "Behaviour.h"
 
-int DefaultBehaviour::process(GameObject *parent) {
+int Behaviour::update() {
     return 0;
 }

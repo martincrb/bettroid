@@ -6,16 +6,17 @@
 #define BETTROID_RENDERER_H
 
 
-class Renderer {
+#include "Component.h"
+class Renderer : public Component {
     private:
-        GLuint VBO;
-        GLuint VAO;
-        GLuint shaderProgram;
+        unsigned int VBO;
+        unsigned int  VAO;
+        unsigned int shaderProgram;
 
     public :
         Renderer();
         int init();
-        int render();
+        int update();
         void setShaders(const char* vertex_shader_source, const char* fragment_shader_source);
 };
 

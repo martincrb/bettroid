@@ -62,15 +62,27 @@ int Game::gameLoop() {
             color = vec3(1,0,0);
         }
 )glsl";
-    Renderer renderer = Renderer();
-    renderer.init();
-    renderer.setShaders(vertex_shader_source, fragment_shader_source);
+
+    auto triangleRenderer = std::make_shared<Renderer>();
+    triangleRenderer->init();
+    triangleRenderer->setShaders(vertex_shader_source, fragment_shader_source);
+    auto redTriangleOfDeath = std::make_shared<GameObject>();
+    auto emptyGameObject = std::make_shared<GameObject>();
+
+    redTriangleOfDeath->addChildren(emptyGameObject);
+    redTriangleOfDeath->addComponent(triangleRenderer);
+
+    Scene bossFight = Scene();
+    bossFight.addGameObject(redTriangleOfDeath);
+
 
     while (!glfwWindowShouldClose(window))
     {
         //Coger eventos de teclado / ratón
-        processLogic();
-        render(&renderer);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        bossFight.update();
+        glfwSwapBuffers(window);
+
         glfwPollEvents();
     }
 
@@ -78,17 +90,9 @@ int Game::gameLoop() {
     glfwTerminate();
 }
 
+int Game::update() {
+
+}
 int Game::loadAssets() {
 
-}
-
-int Game::processLogic() {
-    return 0;
-}
-
-int Game::render(Renderer* renderer) {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    renderer->render();
-    glfwSwapBuffers(window);
-    return 1;
 }

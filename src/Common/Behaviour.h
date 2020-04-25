@@ -2,17 +2,17 @@
 // Created by Martin Cristobal on 25/04/2020.
 //
 
-#ifndef BETTROID_DEFAULTBEHAVIOUR_H
-#define BETTROID_DEFAULTBEHAVIOUR_H
+#ifndef BETTROID_BEHAVIOUR_H
+#define BETTROID_BEHAVIOUR_H
 
 
 #include "Component.h"
 
-class DefaultBehaviour: public Component {
+class Behaviour: public Component {
 public:
-    int upate(GameObject *parent) override;
+    int update() override;
 
 };
 
 
-#endif //BETTROID_DEFAULTBEHAVIOUR_H
+#endif //BETTROID_BEHAVIOUR_H

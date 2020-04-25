@@ -2,16 +2,23 @@
 // Created by Martin Cristobal on 25/04/2020.
 //
 
-#ifndef BETTROID_BEHAVIOUR_H
-#define BETTROID_BEHAVIOUR_H
+#ifndef BETTROID_COMPONENT_H
+#define BETTROID_COMPONENT_H
 
 
-#include "GameObject.h"
+//#include "GameObject.h"
 
-class Behaviour {
+#include <memory>
+
+class GameObject;
+class Component {
+
+private:
+    std::weak_ptr<GameObject> parent;
 public:
-    virtual int update(GameObject* parent) = 0;
+    void setParent(std::weak_ptr<GameObject> parent);
+    virtual int update() = 0;
 };
 
 
-#endif //BETTROID_BEHAVIOUR_H
+#endif //BETTROID_COMPONENT_H

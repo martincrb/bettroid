@@ -10,16 +10,17 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include "Common/Renderer.h"
+#include "Common/Scene.h"
 
 class Game {
 private:
     GLFWwindow* window;
+    std::unique_ptr<Scene> currentScene;
 
     int initWindow();
     int loadAssets();
     int gameLoop();
-    int processLogic();
-    int render(Renderer* renderer);
+    int update();
 public:
     int run();
 };
