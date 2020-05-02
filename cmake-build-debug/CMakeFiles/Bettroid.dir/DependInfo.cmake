@@ -4,11 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/martincrb/Desktop/Bettroid/src/Common/Renderer.cpp" "/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o"
-  "/Users/martincrb/Desktop/Bettroid/src/Common/Shader.cpp" "/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o"
-  "/Users/martincrb/Desktop/Bettroid/src/Common/Transform.cpp" "/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o"
-  "/Users/martincrb/Desktop/Bettroid/src/Game.cpp" "/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Game.cpp.o"
-  "/Users/martincrb/Desktop/Bettroid/src/main.cpp" "/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/src/main.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Behaviour.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Component.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/GameObject.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Mesh.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Quad.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Renderer.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Scene.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Shader.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Common/Transform.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/Game.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/Game.cpp.o"
+  "/Users/martincrb/Documents/repositories/src/main.cpp" "/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

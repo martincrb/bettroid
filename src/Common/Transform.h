@@ -6,7 +6,9 @@
 #define BETTROID_TRANSFORM_H
 
 
-class Transform {
+#include "Component.h"
+
+class Transform : public Component {
 
 };
 

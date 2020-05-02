@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/martincrb/Desktop/Bettroid
+CMAKE_SOURCE_DIR = /Users/martincrb/Documents/repositories
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/martincrb/Desktop/Bettroid/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/martincrb/Documents/repositories/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles /Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles /Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,141 @@ Bettroid/fast:
 	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/build
 .PHONY : Bettroid/fast
 
+src/Common/Behaviour.o: src/Common/Behaviour.cpp.o
+
+.PHONY : src/Common/Behaviour.o
+
+# target to build an object file
+src/Common/Behaviour.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o
+.PHONY : src/Common/Behaviour.cpp.o
+
+src/Common/Behaviour.i: src/Common/Behaviour.cpp.i
+
+.PHONY : src/Common/Behaviour.i
+
+# target to preprocess a source file
+src/Common/Behaviour.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.i
+.PHONY : src/Common/Behaviour.cpp.i
+
+src/Common/Behaviour.s: src/Common/Behaviour.cpp.s
+
+.PHONY : src/Common/Behaviour.s
+
+# target to generate assembly for a file
+src/Common/Behaviour.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.s
+.PHONY : src/Common/Behaviour.cpp.s
+
+src/Common/Component.o: src/Common/Component.cpp.o
+
+.PHONY : src/Common/Component.o
+
+# target to build an object file
+src/Common/Component.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o
+.PHONY : src/Common/Component.cpp.o
+
+src/Common/Component.i: src/Common/Component.cpp.i
+
+.PHONY : src/Common/Component.i
+
+# target to preprocess a source file
+src/Common/Component.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Component.cpp.i
+.PHONY : src/Common/Component.cpp.i
+
+src/Common/Component.s: src/Common/Component.cpp.s
+
+.PHONY : src/Common/Component.s
+
+# target to generate assembly for a file
+src/Common/Component.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Component.cpp.s
+.PHONY : src/Common/Component.cpp.s
+
+src/Common/GameObject.o: src/Common/GameObject.cpp.o
+
+.PHONY : src/Common/GameObject.o
+
+# target to build an object file
+src/Common/GameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o
+.PHONY : src/Common/GameObject.cpp.o
+
+src/Common/GameObject.i: src/Common/GameObject.cpp.i
+
+.PHONY : src/Common/GameObject.i
+
+# target to preprocess a source file
+src/Common/GameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.i
+.PHONY : src/Common/GameObject.cpp.i
+
+src/Common/GameObject.s: src/Common/GameObject.cpp.s
+
+.PHONY : src/Common/GameObject.s
+
+# target to generate assembly for a file
+src/Common/GameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.s
+.PHONY : src/Common/GameObject.cpp.s
+
+src/Common/Mesh.o: src/Common/Mesh.cpp.o
+
+.PHONY : src/Common/Mesh.o
+
+# target to build an object file
+src/Common/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o
+.PHONY : src/Common/Mesh.cpp.o
+
+src/Common/Mesh.i: src/Common/Mesh.cpp.i
+
+.PHONY : src/Common/Mesh.i
+
+# target to preprocess a source file
+src/Common/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.i
+.PHONY : src/Common/Mesh.cpp.i
+
+src/Common/Mesh.s: src/Common/Mesh.cpp.s
+
+.PHONY : src/Common/Mesh.s
+
+# target to generate assembly for a file
+src/Common/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.s
+.PHONY : src/Common/Mesh.cpp.s
+
+src/Common/Quad.o: src/Common/Quad.cpp.o
+
+.PHONY : src/Common/Quad.o
+
+# target to build an object file
+src/Common/Quad.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o
+.PHONY : src/Common/Quad.cpp.o
+
+src/Common/Quad.i: src/Common/Quad.cpp.i
+
+.PHONY : src/Common/Quad.i
+
+# target to preprocess a source file
+src/Common/Quad.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.i
+.PHONY : src/Common/Quad.cpp.i
+
+src/Common/Quad.s: src/Common/Quad.cpp.s
+
+.PHONY : src/Common/Quad.s
+
+# target to generate assembly for a file
+src/Common/Quad.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.s
+.PHONY : src/Common/Quad.cpp.s
+
 src/Common/Renderer.o: src/Common/Renderer.cpp.o
 
 .PHONY : src/Common/Renderer.o
@@ -149,6 +284,33 @@ src/Common/Renderer.s: src/Common/Renderer.cpp.s
 src/Common/Renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.s
 .PHONY : src/Common/Renderer.cpp.s
+
+src/Common/Scene.o: src/Common/Scene.cpp.o
+
+.PHONY : src/Common/Scene.o
+
+# target to build an object file
+src/Common/Scene.cpp.o:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o
+.PHONY : src/Common/Scene.cpp.o
+
+src/Common/Scene.i: src/Common/Scene.cpp.i
+
+.PHONY : src/Common/Scene.i
+
+# target to preprocess a source file
+src/Common/Scene.cpp.i:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.i
+.PHONY : src/Common/Scene.cpp.i
+
+src/Common/Scene.s: src/Common/Scene.cpp.s
+
+.PHONY : src/Common/Scene.s
+
+# target to generate assembly for a file
+src/Common/Scene.cpp.s:
+	$(MAKE) -f CMakeFiles/Bettroid.dir/build.make CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.s
+.PHONY : src/Common/Scene.cpp.s
 
 src/Common/Shader.o: src/Common/Shader.cpp.o
 
@@ -267,9 +429,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Bettroid"
+	@echo "... src/Common/Behaviour.o"
+	@echo "... src/Common/Behaviour.i"
+	@echo "... src/Common/Behaviour.s"
+	@echo "... src/Common/Component.o"
+	@echo "... src/Common/Component.i"
+	@echo "... src/Common/Component.s"
+	@echo "... src/Common/GameObject.o"
+	@echo "... src/Common/GameObject.i"
+	@echo "... src/Common/GameObject.s"
+	@echo "... src/Common/Mesh.o"
+	@echo "... src/Common/Mesh.i"
+	@echo "... src/Common/Mesh.s"
+	@echo "... src/Common/Quad.o"
+	@echo "... src/Common/Quad.i"
+	@echo "... src/Common/Quad.s"
 	@echo "... src/Common/Renderer.o"
 	@echo "... src/Common/Renderer.i"
 	@echo "... src/Common/Renderer.s"
+	@echo "... src/Common/Scene.o"
+	@echo "... src/Common/Scene.i"
+	@echo "... src/Common/Scene.s"
 	@echo "... src/Common/Shader.o"
 	@echo "... src/Common/Shader.i"
 	@echo "... src/Common/Shader.s"

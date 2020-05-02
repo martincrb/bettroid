@@ -3,6 +3,7 @@
 //
 
 #include "Game.h"
+#include "Common/Quad.h"
 
 int Game::run() {
     initWindow();
@@ -63,13 +64,32 @@ int Game::gameLoop() {
         }
 )glsl";
 
-    auto triangleRenderer = std::make_shared<Renderer>();
+    const char* fragment_shader_source2 = R"glsl(
+		#version 330 core
+        out vec3 color;
+        void main(){
+            color = vec3(0,1,0);
+        }
+)glsl";
+    GLfloat vertices[] = {
+            -0.5f, -0.5f, 0.0f,
+            0.5f, -0.5f, 0.0f,
+            0.0f,  0.5f, 0.0f
+    };
+
+    GLfloat vertices2[] = {
+            -0.3f, -0.1f, 0.0f,
+            0.3f, -0.3f, 0.0f,
+            0.0f,  0.3f, 0.0f
+    };
+    std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>();
+    std::shared_ptr<Quad> quad = std::make_shared<Quad>();//std::static_pointer_cast<Quad>(mesh);
+    auto triangleRenderer = std::make_shared<Renderer>(quad);
     triangleRenderer->init();
     triangleRenderer->setShaders(vertex_shader_source, fragment_shader_source);
-    auto redTriangleOfDeath = std::make_shared<GameObject>();
-    auto emptyGameObject = std::make_shared<GameObject>();
 
-    redTriangleOfDeath->addChildren(emptyGameObject);
+
+    auto redTriangleOfDeath = std::make_shared<GameObject>();
     redTriangleOfDeath->addComponent(triangleRenderer);
 
     Scene bossFight = Scene();
@@ -79,6 +99,7 @@ int Game::gameLoop() {
     while (!glfwWindowShouldClose(window))
     {
         //Coger eventos de teclado / ratón
+        glClearColor(0.2, 0.2, 0.2, 1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         bossFight.update();
         glfwSwapBuffers(window);
