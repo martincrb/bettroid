@@ -50,17 +50,25 @@ int Game::gameLoop() {
     const char* vertex_shader_source = R"glsl(
     #version 330 core
     layout(location = 0) in vec3 vertexPosition_modelspace;
+    layout (location = 1) in vec2 aTexCoord;
+
+    out vec2 TexCoord;
     void main()
     {
         gl_Position.xyz = vertexPosition_modelspace;
         gl_Position.w = 1.0;
+        TexCoord = aTexCoord;
     }
 )glsl";
     const char* fragment_shader_source = R"glsl(
 		#version 330 core
-        out vec3 color;
+        out vec4 FragColor;
+        in vec2 TexCoord;
+
+        uniform sampler2D ourTexture;
+
         void main(){
-            color = vec3(1,0,0);
+            FragColor = texture(ourTexture, TexCoord);
         }
 )glsl";
 

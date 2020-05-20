@@ -1,8 +1,11 @@
 //
 // Created by Martin Cristobal on 22/04/2020.
 //
+#define STB_IMAGE_IMPLEMENTATION
+#include "../tools/stb_image.h"
 
 #include <GL/glew.h>
+#include <iostream>
 #include "Renderer.h"
 
 int Renderer::init() {
@@ -21,6 +24,22 @@ int Renderer::init() {
             &(mesh->faces.front()),
             GL_STATIC_DRAW);
 
+    glGenTextures(1, &texture);
+
+    int width, height, nrChannels;
+    unsigned char *data = stbi_load("../assets/textures/container.jpg", &width, &height, &nrChannels, 0);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    if (data) {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    } else {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
 
     return 0;
 }
@@ -39,9 +58,26 @@ int Renderer::update() {
             (void*)0            // array buffer offset
     );
     glEnableVertexAttribArray(0);
+
+
+    glVertexAttribPointer(
+            1,                  // attribute 0. No particular reason for 0, but must match the layout in the shader.
+            2,                  // size
+            GL_FLOAT,           // type
+            GL_FALSE,           // normalized?
+            0 * sizeof(float),                  // stride
+            (void*) (12 * sizeof(float))         // array buffer offset
+    );
+    glEnableVertexAttribArray(1);
+
+
     // Draw the triangle !
+    glBindTexture(GL_TEXTURE_2D, texture);
+    int textureLocation = glGetUniformLocation(shaderProgram, "ourTexture");
+    glUniform1ui(textureLocation, texture);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     glDisableVertexAttribArray(0);
+    glDisableVertexAttribArray(1);
     return 0;
 }
 

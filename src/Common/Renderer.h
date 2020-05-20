@@ -14,6 +14,7 @@ class Renderer : public Component {
         unsigned int EBO;
         unsigned int VBO;
         unsigned int  VAO;
+        unsigned int texture;
         unsigned int shaderProgram;
         std::shared_ptr<Mesh> mesh;
     public :
