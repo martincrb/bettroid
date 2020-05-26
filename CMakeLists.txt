@@ -24,6 +24,7 @@ add_executable(Bettroid
         src/Common/Behaviour.cpp
         src/Common/Behaviour.h
         src/Game.cpp
-        src/Game.h src/Common/Mesh.cpp src/Common/Mesh.h src/Common/Quad.cpp src/Common/Quad.h)
+        src/Game.h src/Common/Mesh.cpp src/Common/Mesh.h src/Common/Quad.cpp src/Common/Quad.h
+        src/tools/stb_image.h)
 
 target_link_libraries(Bettroid GLEW::GLEW glfw OpenGL::GL)

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/martincrb/Documents/repositories
+CMAKE_SOURCE_DIR = /Users/martincrb/Desktop/Bettroid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/martincrb/Documents/repositories/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/martincrb/Desktop/Bettroid/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Bettroid.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/Bettroid.dir/flags.make
 
 CMakeFiles/Bettroid.dir/src/main.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Bettroid.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/main.cpp.o -c /Users/martincrb/Documents/repositories/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Bettroid.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/main.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/main.cpp
 
 CMakeFiles/Bettroid.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/main.cpp > CMakeFiles/Bettroid.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/main.cpp > CMakeFiles/Bettroid.dir/src/main.cpp.i
 
 CMakeFiles/Bettroid.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/main.cpp -o CMakeFiles/Bettroid.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/main.cpp -o CMakeFiles/Bettroid.dir/src/main.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Renderer.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Renderer.cpp > CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Renderer.cpp > CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Renderer.cpp -o CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Renderer.cpp -o CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o: ../src/Common/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Shader.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Shader.cpp > CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Shader.cpp > CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Shader.cpp -o CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Shader.cpp -o CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o: ../src/Common/Transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Transform.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Transform.cpp > CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Transform.cpp > CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Transform.cpp -o CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Transform.cpp -o CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o: ../src/Common/GameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/GameObject.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/GameObject.cpp > CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/GameObject.cpp > CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/GameObject.cpp -o CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/GameObject.cpp -o CMakeFiles/Bettroid.dir/src/Common/GameObject.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o: ../src/Common/Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Scene.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Scene.cpp > CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Scene.cpp > CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Scene.cpp -o CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Scene.cpp -o CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o: ../src/Common/Component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Component.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Component.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Component.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Component.cpp > CMakeFiles/Bettroid.dir/src/Common/Component.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Component.cpp > CMakeFiles/Bettroid.dir/src/Common/Component.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Component.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Component.cpp -o CMakeFiles/Bettroid.dir/src/Common/Component.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Component.cpp -o CMakeFiles/Bettroid.dir/src/Common/Component.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o: ../src/Common/Behaviour.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Behaviour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Behaviour.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Behaviour.cpp > CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Behaviour.cpp > CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Behaviour.cpp -o CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Behaviour.cpp -o CMakeFiles/Bettroid.dir/src/Common/Behaviour.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Bettroid.dir/src/Game.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Game.cpp.o -c /Users/martincrb/Documents/repositories/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Bettroid.dir/src/Game.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Game.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Game.cpp
 
 CMakeFiles/Bettroid.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Game.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Game.cpp > CMakeFiles/Bettroid.dir/src/Game.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Game.cpp > CMakeFiles/Bettroid.dir/src/Game.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Game.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Game.cpp -o CMakeFiles/Bettroid.dir/src/Game.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Game.cpp -o CMakeFiles/Bettroid.dir/src/Game.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o: ../src/Common/Mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Mesh.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Mesh.cpp > CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Mesh.cpp > CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Mesh.cpp -o CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Mesh.cpp -o CMakeFiles/Bettroid.dir/src/Common/Mesh.cpp.s
 
 CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o: CMakeFiles/Bettroid.dir/flags.make
 CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o: ../src/Common/Quad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o -c /Users/martincrb/Documents/repositories/src/Common/Quad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.o -c /Users/martincrb/Desktop/Bettroid/src/Common/Quad.cpp
 
 CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Documents/repositories/src/Common/Quad.cpp > CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/martincrb/Desktop/Bettroid/src/Common/Quad.cpp > CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.i
 
 CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Documents/repositories/src/Common/Quad.cpp -o CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/martincrb/Desktop/Bettroid/src/Common/Quad.cpp -o CMakeFiles/Bettroid.dir/src/Common/Quad.cpp.s
 
 # Object files for target Bettroid
 Bettroid_OBJECTS = \
@@ -233,7 +233,7 @@ Bettroid: /usr/local/lib/libGLEW.2.1.0.dylib
 Bettroid: /usr/local/lib/libglfw.3.3.dylib
 Bettroid: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
 Bettroid: CMakeFiles/Bettroid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Bettroid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Bettroid"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bettroid.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -246,6 +246,6 @@ CMakeFiles/Bettroid.dir/clean:
 .PHONY : CMakeFiles/Bettroid.dir/clean
 
 CMakeFiles/Bettroid.dir/depend:
-	cd /Users/martincrb/Documents/repositories/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/martincrb/Documents/repositories /Users/martincrb/Documents/repositories /Users/martincrb/Documents/repositories/cmake-build-debug /Users/martincrb/Documents/repositories/cmake-build-debug /Users/martincrb/Documents/repositories/cmake-build-debug/CMakeFiles/Bettroid.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/martincrb/Desktop/Bettroid/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/martincrb/Desktop/Bettroid /Users/martincrb/Desktop/Bettroid /Users/martincrb/Desktop/Bettroid/cmake-build-debug /Users/martincrb/Desktop/Bettroid/cmake-build-debug /Users/martincrb/Desktop/Bettroid/cmake-build-debug/CMakeFiles/Bettroid.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Bettroid.dir/depend
 

@@ -8,6 +8,7 @@
 
 #include "Component.h"
 #include "Mesh.h"
+#include "Shader.h"
 
 class Renderer : public Component {
     private:
@@ -16,12 +17,13 @@ class Renderer : public Component {
         unsigned int  VAO;
         unsigned int texture;
         unsigned int shaderProgram;
+        std::shared_ptr<Shader> shader;
         std::shared_ptr<Mesh> mesh;
     public :
         Renderer(std::shared_ptr<Mesh> mesh);
         int init();
         int update();
-        void setShaders(const char* vertex_shader_source, const char* fragment_shader_source);
+        void setShader(std::shared_ptr<Shader> shader);
 };
 
 

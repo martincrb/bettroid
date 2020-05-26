@@ -47,55 +47,15 @@ int Game::initWindow() {
 }
 
 int Game::gameLoop() {
-    const char* vertex_shader_source = R"glsl(
-    #version 330 core
-    layout(location = 0) in vec3 vertexPosition_modelspace;
-    layout (location = 1) in vec2 aTexCoord;
-
-    out vec2 TexCoord;
-    void main()
-    {
-        gl_Position.xyz = vertexPosition_modelspace;
-        gl_Position.w = 1.0;
-        TexCoord = aTexCoord;
-    }
-)glsl";
-    const char* fragment_shader_source = R"glsl(
-		#version 330 core
-        out vec4 FragColor;
-        in vec2 TexCoord;
-
-        uniform sampler2D ourTexture;
-
-        void main(){
-            FragColor = texture(ourTexture, TexCoord);
-        }
-)glsl";
-
-    const char* fragment_shader_source2 = R"glsl(
-		#version 330 core
-        out vec3 color;
-        void main(){
-            color = vec3(0,1,0);
-        }
-)glsl";
-    GLfloat vertices[] = {
-            -0.5f, -0.5f, 0.0f,
-            0.5f, -0.5f, 0.0f,
-            0.0f,  0.5f, 0.0f
-    };
-
-    GLfloat vertices2[] = {
-            -0.3f, -0.1f, 0.0f,
-            0.3f, -0.3f, 0.0f,
-            0.0f,  0.3f, 0.0f
-    };
     std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>();
     std::shared_ptr<Quad> quad = std::make_shared<Quad>();//std::static_pointer_cast<Quad>(mesh);
+    std::shared_ptr<Shader> shader = std::make_shared<Shader>(
+            "../assets/shaders/default/shader.vert",
+            "../assets/shaders/default/shader.frag");
+
     auto triangleRenderer = std::make_shared<Renderer>(quad);
     triangleRenderer->init();
-    triangleRenderer->setShaders(vertex_shader_source, fragment_shader_source);
-
+    triangleRenderer->setShader(shader);
 
     auto redTriangleOfDeath = std::make_shared<GameObject>();
     redTriangleOfDeath->addComponent(triangleRenderer);

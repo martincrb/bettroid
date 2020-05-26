@@ -25,6 +25,8 @@ CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Component.h
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Mesh.h
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Renderer.cpp
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Renderer.h
+CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/Common/Shader.h
+CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: ../src/tools/stb_image.h
 CMakeFiles/Bettroid.dir/src/Common/Renderer.cpp.o: /usr/local/include/GL/glew.h
 
 CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o: ../src/Common/Component.h
@@ -34,6 +36,7 @@ CMakeFiles/Bettroid.dir/src/Common/Scene.cpp.o: ../src/Common/Scene.h
 
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o: ../src/Common/Shader.cpp
 CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o: ../src/Common/Shader.h
+CMakeFiles/Bettroid.dir/src/Common/Shader.cpp.o: /usr/local/include/GL/glew.h
 
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o: ../src/Common/Component.h
 CMakeFiles/Bettroid.dir/src/Common/Transform.cpp.o: ../src/Common/Transform.cpp
@@ -45,6 +48,7 @@ CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Common/Mesh.h
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Common/Quad.h
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Common/Renderer.h
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Common/Scene.h
+CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Common/Shader.h
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Game.cpp
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: ../src/Game.h
 CMakeFiles/Bettroid.dir/src/Game.cpp.o: /usr/local/include/GL/glew.h
@@ -203,6 +207,7 @@ CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Common/GameObject.h
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Common/Mesh.h
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Common/Renderer.h
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Common/Scene.h
+CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Common/Shader.h
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/Game.h
 CMakeFiles/Bettroid.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Bettroid.dir/src/main.cpp.o: /usr/local/include/GL/glew.h

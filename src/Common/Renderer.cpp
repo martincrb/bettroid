@@ -45,7 +45,8 @@ int Renderer::init() {
 }
 
 int Renderer::update() {
-    glUseProgram(shaderProgram);
+    //glUseProgram(shaderProgram);
+    shader->use();
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
@@ -73,35 +74,17 @@ int Renderer::update() {
 
     // Draw the triangle !
     glBindTexture(GL_TEXTURE_2D, texture);
-    int textureLocation = glGetUniformLocation(shaderProgram, "ourTexture");
-    glUniform1ui(textureLocation, texture);
+    shader->setUint("ourTexture", texture);
+    //int textureLocation = glGetUniformLocation(shaderProgram, "ourTexture");
+    //glUniform1ui(textureLocation, texture);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     glDisableVertexAttribArray(0);
     glDisableVertexAttribArray(1);
     return 0;
 }
 
-void Renderer::setShaders(const char *vertex_shader_source, const char *fragment_shader_source) {
-    GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertex_shader_source, NULL);
-    glCompileShader(vertexShader);
-
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragment_shader_source, NULL);
-    glCompileShader(fragmentShader);
-
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-
-    glLinkProgram(shaderProgram);
-    // Check the program
-
-    glDetachShader(shaderProgram, vertexShader);
-    glDetachShader(shaderProgram, fragmentShader);
-
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-}
-
 Renderer::Renderer(std::shared_ptr<Mesh> mesh) : mesh{mesh} {}
+
+void Renderer::setShader(std::shared_ptr<Shader> shader) {
+    this->shader = shader;
+}
