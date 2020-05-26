@@ -9,7 +9,9 @@
 #include "Component.h"
 #include "Mesh.h"
 #include "Shader.h"
+#include "GameObject.h"
 
+class GameObject;
 class Renderer : public Component {
     private:
         unsigned int EBO;
@@ -22,7 +24,7 @@ class Renderer : public Component {
     public :
         Renderer(std::shared_ptr<Mesh> mesh);
         int init();
-        int update();
+        int update(int dT);
         void setShader(std::shared_ptr<Shader> shader);
 };
 

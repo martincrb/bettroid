@@ -4,6 +4,6 @@
 
 #include "Behaviour.h"
 
-int Behaviour::update() {
+int Behaviour::update(int dT) {
     return 0;
 }

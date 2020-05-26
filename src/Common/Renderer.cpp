@@ -6,7 +6,10 @@
 
 #include <GL/glew.h>
 #include <iostream>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/glm.hpp>
 #include "Renderer.h"
+#include "Transform.h"
 
 int Renderer::init() {
     glGenVertexArrays(1, &VAO);
@@ -44,7 +47,7 @@ int Renderer::init() {
     return 0;
 }
 
-int Renderer::update() {
+int Renderer::update(int dT) {
     //glUseProgram(shaderProgram);
     shader->use();
     glBindVertexArray(VAO);
@@ -74,7 +77,16 @@ int Renderer::update() {
 
     // Draw the triangle !
     glBindTexture(GL_TEXTURE_2D, texture);
+    std::shared_ptr<GameObject> parentPointer = Component::getParent();
+
+    std::shared_ptr<Transform> transform = parentPointer->getTransform();
+    /* Just for the lulz
+    auto oldRotationX = transform->getRotation()[0];
+    auto oldRotationY = transform->getRotation()[1];
+    transform->setRotation(oldRotationX + 1*dT*0.05, oldRotationY + 1*dT*0.05 ,0);
+     */
     shader->setUint("ourTexture", texture);
+    shader->setMatrix4("transform", transform->trans);
     //int textureLocation = glGetUniformLocation(shaderProgram, "ourTexture");
     //glUniform1ui(textureLocation, texture);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

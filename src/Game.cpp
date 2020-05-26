@@ -53,26 +53,31 @@ int Game::gameLoop() {
             "../assets/shaders/default/shader.vert",
             "../assets/shaders/default/shader.frag");
 
-    auto triangleRenderer = std::make_shared<Renderer>(quad);
-    triangleRenderer->init();
-    triangleRenderer->setShader(shader);
 
-    auto redTriangleOfDeath = std::make_shared<GameObject>();
-    redTriangleOfDeath->addComponent(triangleRenderer);
+    auto gObject = std::make_shared<GameObject>();
+    auto renderer = std::make_shared<Renderer>(quad);
+    renderer->init();
+    renderer->setShader(shader);
 
-    Scene bossFight = Scene();
-    bossFight.addGameObject(redTriangleOfDeath);
+    gObject->addComponent(renderer);
 
+    Scene scene = Scene();
+    scene.addGameObject(gObject);
 
+    int dT = 0;
     while (!glfwWindowShouldClose(window))
     {
+        auto start_time = std::chrono::high_resolution_clock::now();
         //Coger eventos de teclado / ratón
         glClearColor(0.2, 0.2, 0.2, 1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        bossFight.update();
+        scene.update(dT);
         glfwSwapBuffers(window);
 
         glfwPollEvents();
+        auto end_time = std::chrono::high_resolution_clock::now();
+        auto time = end_time - start_time;
+        dT = time/std::chrono::milliseconds(1);
     }
 
     glfwDestroyWindow(window);

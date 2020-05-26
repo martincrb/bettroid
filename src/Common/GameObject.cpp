@@ -3,7 +3,10 @@
 //
 
 #include "GameObject.h"
-GameObject::GameObject() {}
+
+GameObject::GameObject() {
+    transform = std::make_shared<Transform>();
+}
 
 void GameObject::setParent(std::shared_ptr<GameObject> parent) {
     this->parent = parent;
@@ -24,13 +27,21 @@ void GameObject::removeChildrenAt(int index) {
     children.erase(children.begin() + index);
 }
 
-int GameObject::update() {
+int GameObject::update(int dT) {
     for (auto& component : components) {
-        component->update();
+        component->update(dT);
     }
 
     for (auto& child : children) {
-        child->update();
+        child->update(dT);
     }
     return 0;
+}
+
+std::shared_ptr<Transform> GameObject::getTransform() {
+    return transform;
+}
+
+std::shared_ptr<GameObject> GameObject::getParent() {
+    return parent.lock();
 }

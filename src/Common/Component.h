@@ -9,15 +9,18 @@
 //#include "GameObject.h"
 
 #include <memory>
+#include <string>
 
 class GameObject;
 class Component {
 
-private:
+protected:
     std::weak_ptr<GameObject> parent;
+
 public:
     void setParent(std::weak_ptr<GameObject> parent);
-    virtual int update() = 0;
+    std::shared_ptr<GameObject> getParent();
+    virtual int update(int dT) = 0;
 };
 
 

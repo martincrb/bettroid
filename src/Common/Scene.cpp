@@ -5,9 +5,9 @@
 #include <iostream>
 #include "Scene.h"
 
-int Scene::update() {
+int Scene::update(int dT) {
     for (auto& gameObject : entities) {
-        gameObject->update();
+        gameObject->update(dT);
     }
     return 0;
 }

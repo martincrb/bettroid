@@ -14,7 +14,7 @@ private:
     std::vector<std::shared_ptr<GameObject>> entities;
 
 public:
-    int update();
+    int update(int dT);
     void addGameObject(std::shared_ptr<GameObject> gameObject);
 };
 
