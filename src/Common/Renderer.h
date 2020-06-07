@@ -10,6 +10,7 @@
 #include "Mesh.h"
 #include "Shader.h"
 #include "GameObject.h"
+#include "Camera.h"
 
 class GameObject;
 class Renderer : public Component {
@@ -18,13 +19,13 @@ class Renderer : public Component {
         unsigned int VBO;
         unsigned int  VAO;
         unsigned int texture;
-        unsigned int shaderProgram;
+        std::shared_ptr<Camera> camera;
         std::shared_ptr<Shader> shader;
         std::shared_ptr<Mesh> mesh;
     public :
-        Renderer(std::shared_ptr<Mesh> mesh);
+        Renderer(std::shared_ptr<Mesh> mesh, std::shared_ptr<Camera> camera);
         int init();
-        int update(int dT);
+        int update(double dT);
         void setShader(std::shared_ptr<Shader> shader);
 };
 

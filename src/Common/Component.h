@@ -20,7 +20,7 @@ protected:
 public:
     void setParent(std::weak_ptr<GameObject> parent);
     std::shared_ptr<GameObject> getParent();
-    virtual int update(int dT) = 0;
+    virtual int update(double dT) = 0;
 };
 
 

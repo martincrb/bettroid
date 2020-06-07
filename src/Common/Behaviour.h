@@ -10,7 +10,7 @@
 
 class Behaviour: public Component {
 public:
-    int update(int dT) override;
+    int update(double dT) override;
 
 };
 

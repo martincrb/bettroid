@@ -14,9 +14,10 @@
 
 class Game {
 private:
-    GLFWwindow* window;
+    std::shared_ptr<GLFWwindow> window;
     std::unique_ptr<Scene> currentScene;
-
+    int width;
+    int height;
     int initWindow();
     int loadAssets();
     int gameLoop();

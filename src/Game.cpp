@@ -4,6 +4,8 @@
 
 #include "Game.h"
 #include "Common/Quad.h"
+#include "Behaviours/RotateAroundOrigin.h"
+#include "Common/InputProvider.h"
 
 int Game::run() {
     initWindow();
@@ -13,8 +15,8 @@ int Game::run() {
 }
 
 int Game::initWindow() {
-    int width = 1024;
-    int height = 768;
+    width = 1024;
+    height = 768;
 
     if( !glfwInit() )
     {
@@ -26,8 +28,9 @@ int Game::initWindow() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Para hacer feliz a MacOS ; Aunque no debería ser necesaria
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //No queremos el viejo OpenGL
-
-    window = glfwCreateWindow( width, height, "Bettroit", NULL, NULL);
+    window = std::shared_ptr<GLFWwindow>(
+            glfwCreateWindow( width, height, "Bettroit", NULL, NULL),
+            std::free);
 
 
     if( window == NULL ){
@@ -37,7 +40,7 @@ int Game::initWindow() {
     }
 
 
-    glfwMakeContextCurrent(window); // Inicializar GLEW
+    glfwMakeContextCurrent(window.get()); // Inicializar GLEW
     glewExperimental=true; // Se necesita en el perfil de base.
     if (glewInit() != GLEW_OK) {
         fprintf(stderr, "Falló al inicializar GLEW\n");
@@ -53,34 +56,37 @@ int Game::gameLoop() {
             "../assets/shaders/default/shader.vert",
             "../assets/shaders/default/shader.frag");
 
+    auto inputProvider = std::make_shared<InputProvider>(window);
 
     auto gObject = std::make_shared<GameObject>();
-    auto renderer = std::make_shared<Renderer>(quad);
+    auto gameCamera = std::make_shared<Camera>((float)width, (float)height);
+    gameCamera->setPosition(2, 2, 2);
+    auto rotateBehaviour = std::make_shared<RotateAroundOrigin>();
+    gameCamera->addComponent(rotateBehaviour);
+    auto renderer = std::make_shared<Renderer>(quad, gameCamera);
     renderer->init();
     renderer->setShader(shader);
 
     gObject->addComponent(renderer);
 
     Scene scene = Scene();
-    scene.addGameObject(gObject);
 
-    int dT = 0;
-    while (!glfwWindowShouldClose(window))
+    scene.addGameObject(gObject);
+    scene.addGameObject(gameCamera);
+
+    while (!glfwWindowShouldClose(window.get()))
     {
-        auto start_time = std::chrono::high_resolution_clock::now();
         //Coger eventos de teclado / ratón
+        inputProvider->isKeyDown(GLFW_KEY_A);
         glClearColor(0.2, 0.2, 0.2, 1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        scene.update(dT);
-        glfwSwapBuffers(window);
+        scene.update(glfwGetTime());
+        glfwSwapBuffers(window.get());
 
         glfwPollEvents();
-        auto end_time = std::chrono::high_resolution_clock::now();
-        auto time = end_time - start_time;
-        dT = time/std::chrono::milliseconds(1);
     }
 
-    glfwDestroyWindow(window);
+    glfwDestroyWindow(window.get());
     glfwTerminate();
 }
 

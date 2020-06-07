@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Scene.h"
 
-int Scene::update(int dT) {
+int Scene::update(double dT) {
     for (auto& gameObject : entities) {
         gameObject->update(dT);
     }

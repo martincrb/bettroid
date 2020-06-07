@@ -8,7 +8,7 @@
 #include "Transform.h"
 
 class GameObject : public std::enable_shared_from_this<GameObject> {
-private:
+protected:
     std::weak_ptr<GameObject> parent;
     std::vector<std::shared_ptr<GameObject>> children;
     std::vector<std::shared_ptr<Component>> components;
@@ -22,6 +22,7 @@ public:
     void removeChildrenAt(int index);
     std::shared_ptr<Transform> getTransform();
     std::shared_ptr<GameObject> getParent();
-    int update(int dT);
+
+    virtual int update(double dT);
 };
 #endif //BETTROID_GAMEOBJECT_H

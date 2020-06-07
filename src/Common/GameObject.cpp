@@ -27,7 +27,7 @@ void GameObject::removeChildrenAt(int index) {
     children.erase(children.begin() + index);
 }
 
-int GameObject::update(int dT) {
+int GameObject::update(double dT) {
     for (auto& component : components) {
         component->update(dT);
     }

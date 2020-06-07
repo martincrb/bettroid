@@ -47,7 +47,7 @@ int Renderer::init() {
     return 0;
 }
 
-int Renderer::update(int dT) {
+int Renderer::update(double dT) {
     //glUseProgram(shaderProgram);
     shader->use();
     glBindVertexArray(VAO);
@@ -80,13 +80,15 @@ int Renderer::update(int dT) {
     std::shared_ptr<GameObject> parentPointer = Component::getParent();
 
     std::shared_ptr<Transform> transform = parentPointer->getTransform();
-    /* Just for the lulz
-    auto oldRotationX = transform->getRotation()[0];
+    /*
     auto oldRotationY = transform->getRotation()[1];
+    auto oldRotationX = transform->getRotation()[0];
     transform->setRotation(oldRotationX + 1*dT*0.05, oldRotationY + 1*dT*0.05 ,0);
      */
     shader->setUint("ourTexture", texture);
     shader->setMatrix4("transform", transform->trans);
+    shader->setMatrix4("view", camera->getView());
+    shader->setMatrix4("projection", camera->getProjection());
     //int textureLocation = glGetUniformLocation(shaderProgram, "ourTexture");
     //glUniform1ui(textureLocation, texture);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -95,7 +97,10 @@ int Renderer::update(int dT) {
     return 0;
 }
 
-Renderer::Renderer(std::shared_ptr<Mesh> mesh) : mesh{mesh} {}
+Renderer::Renderer(std::shared_ptr<Mesh> mesh, std::shared_ptr<Camera> camera) :
+    mesh{mesh} ,
+    camera{camera}
+{}
 
 void Renderer::setShader(std::shared_ptr<Shader> shader) {
     this->shader = shader;
